@@ -1,0 +1,35 @@
+name: Update Proofs Database
+
+on:
+    push:
+        paths:
+            - "database.json"
+            - "scripts/generate_proofs.js"
+        branches:
+            - main
+    workflow_dispatch:
+
+jobs:
+    update-proofs:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20"
+
+            - name: Generate PROOFS.md
+              run: node scripts/generate_proofs.js
+
+            - name: Commit changes
+              uses: stefanzweifel/git-auto-commit-action@v5
+              with:
+                  commit_message: "docs: update PROOFS.md [skip ci]"
+                  file_pattern: "PROOFS.md"

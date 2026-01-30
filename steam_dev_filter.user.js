@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Steam Dev Filter
 // @namespace    https://github.com/gbzret4d/steam-dev-filter
-// @version      1.3
+// @version      1.4
 // @description  Warns about fraudulent Steam developers (Rug pulls, Asset Flips, etc.) based on a community database.
 // @author       Steam Dev Filter Community
 // @match        https://store.steampowered.com/*
@@ -32,7 +32,15 @@
     const CACHE_TIME = 24 * 60 * 60 * 1000; // 24 hours
 
     // --- Localization ---
-    const LANG = navigator.language.startsWith('de') ? 'de' : 'en';
+    // --- Localization ---
+    // Helper to detect language
+    function getLang() {
+        const navLang = navigator.language.slice(0, 2).toLowerCase();
+        const supported = ['de', 'en', 'fr', 'es', 'ru', 'zh'];
+        return supported.includes(navLang) ? navLang : 'en';
+    }
+
+    const LANG = getLang();
     const I18N = {
         de: {
             RUG_PULL: "Geld genommen & abgehauen",
@@ -55,6 +63,50 @@
             UNKNOWN: "Unknown Warning",
             LOADING: "Loading Data...",
             PROOF: "View Proof"
+        },
+        fr: {
+            RUG_PULL: "Arnaque / Rug Pull",
+            ASSET_FLIP: "Asset Flip bon marché",
+            MALICIOUS: "Malveillant / Banni",
+            ABANDONWARE: "Abandonware",
+            HOSTILE_DEV: "Développeur hostile",
+            BROKEN_PROMISES: "Promesses non tenues",
+            UNKNOWN: "Avertissement inconnu",
+            LOADING: "Chargement des données...",
+            PROOF: "Voir la preuve"
+        },
+        es: {
+            RUG_PULL: "Estafa / Rug Pull",
+            ASSET_FLIP: "Asset Flip barato",
+            MALICIOUS: "Malicioso / Prohibido",
+            ABANDONWARE: "Abandonware",
+            HOSTILE_DEV: "Desarrollador hostil",
+            BROKEN_PROMISES: "Promesas rotas",
+            UNKNOWN: "Advertencia desconocida",
+            LOADING: "Cargando datos...",
+            PROOF: "Ver prueba"
+        },
+        ru: {
+            RUG_PULL: "Мошенничество / Rug Pull",
+            ASSET_FLIP: "Дешёвый Asset Flip",
+            MALICIOUS: "Вредоносный / Забанен",
+            ABANDONWARE: "Брошенный проект",
+            HOSTILE_DEV: "Враждебный разработчик",
+            BROKEN_PROMISES: "Нарушенные обещания",
+            UNKNOWN: "Неизвестное предупреждение",
+            LOADING: "Загрузка данных...",
+            PROOF: "Посмотреть доказательство"
+        },
+        zh: {
+            RUG_PULL: "卷款跑路 / Rug Pull",
+            ASSET_FLIP: "劣质素材翻新",
+            MALICIOUS: "恶意 / 已封禁",
+            ABANDONWARE: "遗弃软件",
+            HOSTILE_DEV: "敌对开发者",
+            BROKEN_PROMISES: "违背承诺",
+            UNKNOWN: "未知警告",
+            LOADING: "正在加载数据...",
+            PROOF: "查看证据"
         }
     };
 
@@ -155,7 +207,7 @@
         return names;
     }
 
-    function createBadge(entry) {
+    function createBadge(entry, id) {
         if (!entry) return null;
 
         const catConfig = CATEGORIES[entry.type] || { icon: "⚠️", severity: "info" };
@@ -166,13 +218,14 @@
         badge.innerHTML = `<span class="sw-icon">${catConfig.icon}</span> ${labelText}`;
 
         // Tooltip logic
-        badge.title = `${entry.notes}\n\n${I18N[LANG].PROOF}: ${entry.proof_url}`;
+        const proofUrl = `https://github.com/gbzret4d/steam-dev-filter/blob/main/PROOFS.md#${id}`;
+        badge.title = `${entry.notes}\n\n${I18N[LANG].PROOF}`;
 
         // Click to open proof
         badge.onclick = (e) => {
             e.preventDefault();
             e.stopPropagation();
-            window.open(entry.proof_url, '_blank');
+            window.open(proofUrl, '_blank');
         };
 
         return badge;
@@ -249,9 +302,20 @@
             }
 
             if (matchedEntry) {
-                const badge = createBadge(matchedEntry);
-                if (badge) {
-                    link.parentNode.insertBefore(badge, link.nextSibling);
+                // Find ID again if we only have the entry object (inefficient but safe)
+                let matchedId = null;
+                for (const [id, entry] of Object.entries(db)) {
+                    if (entry === matchedEntry) {
+                        matchedId = id;
+                        break;
+                    }
+                }
+
+                if (matchedId) {
+                    const badge = createBadge(matchedEntry, matchedId);
+                    if (badge) {
+                        link.parentNode.insertBefore(badge, link.nextSibling);
+                    }
                 }
             }
         });
