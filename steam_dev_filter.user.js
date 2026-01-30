@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Steam Watchdog
+// @name         Steam Dev Filter
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Warns about fraudulent Steam developers (Rug pulls, Asset Flips, etc.) based on a community database.
-// @author       Steam Watchdog Community
+// @author       Steam Dev Filter Community
 // @match        https://store.steampowered.com/*
 // @grant        GM_xmlhttpRequest
 // @grant        GM_setValue
@@ -16,8 +16,8 @@
     'use strict';
 
     // --- Configuration ---
-    const DB_URL = 'https://raw.githubusercontent.com/USERNAME/steam-watchdog/main/database.json'; // TODO: Replace USERNAME
-    const CACHE_KEY = 'steam_watchdog_db';
+    const DB_URL = 'https://raw.githubusercontent.com/USERNAME/steam-dev-filter/main/database.json'; // TODO: Replace USERNAME
+    const CACHE_KEY = 'steam_dev_filter_db';
     const CACHE_TIME = 24 * 60 * 60 * 1000; // 24 hours
 
     // --- Localization ---
@@ -31,7 +31,7 @@
             HOSTILE_DEV: "Feindseliger Entwickler",
             BROKEN_PROMISES: "Leere Versprechungen",
             UNKNOWN: "Unbekannte Warnung",
-            LOADING: "Lade Watchdog Daten...",
+            LOADING: "Lade Daten...",
             PROOF: "Beweis ansehen"
         },
         en: {
@@ -42,7 +42,7 @@
             HOSTILE_DEV: "Hostile Developer",
             BROKEN_PROMISES: "Broken Promises",
             UNKNOWN: "Unknown Warning",
-            LOADING: "Loading Watchdog Data...",
+            LOADING: "Loading Data...",
             PROOF: "View Proof"
         }
     };
@@ -96,11 +96,11 @@
         const now = Date.now();
 
         if (cached && (now - cached.timestamp < CACHE_TIME)) {
-            console.log('[Steam Watchdog] Loaded from cache');
+            console.log('[Steam Dev Filter] Loaded from cache');
             return cached.data;
         }
 
-        console.log('[Steam Watchdog] Fetching database...');
+        console.log('[Steam Dev Filter] Fetching database...');
         return new Promise((resolve) => {
             GM_xmlhttpRequest({
                 method: "GET",
@@ -111,12 +111,12 @@
                         GM_setValue(CACHE_KEY, { timestamp: now, data: data });
                         resolve(data);
                     } catch (e) {
-                        console.error('[Steam Watchdog] Failed to parse DB', e);
+                        console.error('[Steam Dev Filter] Failed to parse DB', e);
                         resolve({}); // Fail gracefully
                     }
                 },
                 onerror: function() {
-                    console.error('[Steam Watchdog] Network error');
+                    console.error('[Steam Dev Filter] Network error');
                     resolve({});
                 }
             });

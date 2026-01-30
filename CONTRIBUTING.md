@@ -1,4 +1,4 @@
-# Contributing to Steam Watchdog
+# Contributing to Steam Dev Filter
 
 Thank you for helping to keep Steam safe!
 

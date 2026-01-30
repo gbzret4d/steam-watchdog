@@ -1,6 +1,6 @@
-# Steam Watchdog
+# Steam Dev Filter
 
-Steam Watchdog is a community-driven database and Userscript designed to protect Steam users from fraudulent developers, scam projects, and abandoned early access games.
+Steam Dev Filter is a community-driven database and Userscript designed to protect Steam users from fraudulent developers, scam projects, and abandoned early access games.
 
 It adds a visible warning badge next to developer names on the Steam Store, helping you make informed purchasing decisions.
 
@@ -14,7 +14,7 @@ It adds a visible warning badge next to developer names on the Steam Store, help
 ## Installation
 
 1. Install a Userscript manager like [Tampermonkey](https://www.tampermonkey.net/) or [Violentmonkey](https://violentmonkey.github.io/).
-2. Click here to install the script: [**Install Steam Watchdog**](steam_watchdog.user.js) (or manually load `steam_watchdog.user.js`).
+2. Click here to install the script: [**Install Steam Dev Filter**](steam_dev_filter.user.js) (or manually load `steam_dev_filter.user.js`).
 3. Visit any Steam store page to see it in action.
 
 ## Categories
@@ -32,7 +32,7 @@ It adds a visible warning badge next to developer names on the Steam Store, help
 
 This project relies on the community to report bad actors.
 
-- **Found a scammer?** [Submit a Report](https://github.com/USERNAME/steam-watchdog/issues/new/choose)
+- **Found a scammer?** [Submit a Report](https://github.com/USERNAME/steam-dev-filter/issues/new/choose)
 - **Found a mistake?** Open an issue to request a correction.
 - **Developer?** Check out [CONTRIBUTING.md](CONTRIBUTING.md) to help with the code.
 

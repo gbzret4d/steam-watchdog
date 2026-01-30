@@ -1,0 +1,60 @@
+name: Report a Developer
+description: Report a fraudulent developer, scam, or abandoned project.
+title: "[REPORT] <Developer Name>"
+labels: ["triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping verify the database!
+        Please strictly follow the **No Proof, No Entry** policy.
+
+  - type: input
+    id: developer_name
+    attributes:
+      label: Developer Name
+      description: The exact name as it appears on Steam.
+      placeholder: e.g. Fntastic
+    validations:
+      required: true
+
+  - type: input
+    id: steam_id
+    attributes:
+      label: Steam Developer ID (Optional)
+      description: The numeric ID or string ID from the URL (e.g. `store.steampowered.com/developer/XYZ`).
+      placeholder: e.g. 12345678 or my-studio-name
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Select the most appropriate category.
+      options:
+        - RUG_PULL (Money taken, project abandoned immediately)
+        - ASSET_FLIP (Low effort, bought assets, no game)
+        - MALICIOUS (Malware, Crypto Miner, Banned by Valve)
+        - HOSTILE_DEV (Banning users, legal threats, hate speech)
+        - ABANDONWARE (Early Access, no updates > 1 year)
+        - BROKEN_PROMISES (Kickstarter scam, false advertising)
+    validations:
+      required: true
+
+  - type: input
+    id: proof
+    attributes:
+      label: Proof URL
+      description: A link to a reliable source (News Article, Archive.org, YouTube Investigation). Steam Discussion/Reviews are usually NOT enough unless they contain hard evidence.
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Brief explanation of the situation.
+      placeholder: This developer was banned by Valve in 2018 for review manipulation...
+    validations:
+      required: true

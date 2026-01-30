@@ -1,10 +1,98 @@
 {
-  "76561198000000000": {
-    "name": "Example Scammer",
-    "aliases": ["Old Name 1", "Old Name 2"],
-    "type": "RUG_PULL",
-    "proof_url": "https://example.com/proof",
-    "severity": "critical",
-    "notes": "Took money and ran."
-  }
+    "fntastic": {
+        "name": "Fntastic",
+        "aliases": [
+            "Eight Points"
+        ],
+        "type": "RUG_PULL",
+        "proof_url": "https://en.wikipedia.org/wiki/The_Day_Before",
+        "severity": "critical",
+        "notes": "Studio closed 4 days after 'The Day Before' release. Massive false advertising."
+    },
+    "digital_homicide_studios": {
+        "name": "Digital Homicide Studios",
+        "aliases": [
+            "Digital Homicide",
+            "Seven-G"
+        ],
+        "type": "HOSTILE_DEV",
+        "proof_url": "https://en.wikipedia.org/wiki/Digital_Homicide_Studios",
+        "severity": "warning",
+        "notes": "Sued 100 Steam users for bad reviews. Banned by Valve."
+    },
+    "silicon_echo_studios": {
+        "name": "Silicon Echo Studios",
+        "aliases": [
+            "Zonitron Productions"
+        ],
+        "type": "ASSET_FLIP",
+        "proof_url": "https://www.polygon.com/2017/9/26/16368178/steam-shovelware-removed-asset-flipping",
+        "severity": "critical",
+        "notes": "Spammed 200+ asset flip games. Banned by Valve in 2017."
+    },
+    "dolphin_barn_incorporated": {
+        "name": "Dolphin Barn Incorporated",
+        "aliases": [],
+        "type": "MALICIOUS",
+        "proof_url": "https://www.pcgamer.com/domina-developer-banned-from-steam-after-transphobic-rant-in-patch-notes/",
+        "severity": "critical",
+        "notes": "Banned for hateful conduct and transphobic patch notes."
+    },
+    "hammerpoint_interactive": {
+        "name": "Hammerpoint Interactive",
+        "aliases": [],
+        "type": "BROKEN_PROMISES",
+        "proof_url": "https://en.wikipedia.org/wiki/Infestation:_Survivor_Stories",
+        "severity": "warning",
+        "notes": "The War Z controversy. False advertising and microtransactions in paid alpha."
+    },
+    "insel_games_ltd": {
+        "name": "Insel Games Ltd.",
+        "aliases": [
+            "Insel Games"
+        ],
+        "type": "MALICIOUS",
+        "proof_url": "https://www.polygon.com/2018/2/14/17012354/steam-removes-games-review-manipulation-insel-games",
+        "severity": "critical",
+        "notes": "Forced employees to write positive reviews. Banned by Valve in 2018."
+    },
+    "muxy5229": {
+        "name": "Muxy5229",
+        "aliases": [
+            "Killing Day Studios"
+        ],
+        "type": "RUG_PULL",
+        "proof_url": "https://www.eurogamer.net/steam-identifies-broken-game-scam-pulls-earth-year-2066-from-sale",
+        "severity": "critical",
+        "notes": "Creator of 'Earth: Year 2066'. Removed by Valve for being a broken scam."
+    },
+    "smp": {
+        "name": "SMP",
+        "aliases": [
+            "Xavi Canal",
+            "Ben Palgi"
+        ],
+        "type": "ABANDONWARE",
+        "proof_url": "https://www.pcgamer.com/towns-developer-abandons-game-indie-city-builder-fans-up-in-arms/",
+        "severity": "warning",
+        "notes": "Abandoned 'Towns' in unfinished state after promising 'Towns 2'."
+    },
+    "codehatch": {
+        "name": "CodeHatch",
+        "aliases": [],
+        "type": "BROKEN_PROMISES",
+        "proof_url": "https://www.eurogamer.net/starforge-developers-slam-critics-claim-theyre-victims-of-witch-hunt",
+        "severity": "warning",
+        "notes": "Abandoned 'StarForge' in broken state. Removed negative forum posts."
+    },
+    "okalo_union": {
+        "name": "Okalo Union",
+        "aliases": [
+            "Deadlyscape"
+        ],
+        "type": "MALICIOUS",
+        "proof_url": "https://www.vice.com/en/article/steam-game-abstractism-crypto-miner-scam/",
+        "severity": "critical",
+        "notes": "Developer of 'Abstractism'. Used game as Trojan to mine cryptocurrency."
+    }
 }
