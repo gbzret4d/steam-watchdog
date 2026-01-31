@@ -36,7 +36,17 @@ Last Updated: 2026-01-31
 - **Aliases**: Birdiev, Bertiev, BCInteractive
 - **Notes**: Notorious asset flipper and critic banner. 'Willingly scams consumers' (SidAlpha).
 - **Evidence**:
-  - [Primary Source](https://www.youtube.com/watch?v=1X1X1X1X1X1)
+  - [Primary Source](https://www.youtube.com/results?search_query=SidAlpha+Dirty+Devs+I%27m+Looking+for+3024+People)
+
+---
+
+## <a id="black_riddles_studio"></a>Black Riddles Studio Ltd
+
+- **Category**: ABANDONWARE
+- **Severity**: WARNING
+- **Notes**: Crowdfunded 'Crazy Justice' and went silent for years.
+- **Evidence**:
+  - [Primary Source](https://www.eurogamer.net/crazy-justice-dev-goes-silent-as-backers-fear-for-switch-battle-royale)
 
 ---
 
@@ -156,6 +166,16 @@ Last Updated: 2026-01-31
 
 ---
 
+## <a id="iron_bit"></a>Iron Bit
+
+- **Category**: ABANDONWARE
+- **Severity**: WARNING
+- **Notes**: Abandoned 'Colonies Online' shortly after Early Access release.
+- **Evidence**:
+  - [Primary Source](https://steamcommunity.com/app/283100/discussions/0/613958868352112282/)
+
+---
+
 ## <a id="midnight_games"></a>Midnight Works
 
 - **Category**: ASSET_FLIP
@@ -222,6 +242,17 @@ Last Updated: 2026-01-31
 
 ---
 
+## <a id="snail_games"></a>Snail Games
+
+- **Category**: ABANDONWARE,BROKEN_PROMISES
+- **Severity**: WARNING
+- **Aliases**: Snail Games USA
+- **Notes**: History of abandoning games (Atlas) and poor optimization. Ark controversies.
+- **Evidence**:
+  - [Primary Source](https://www.pcgamer.com/atlas-devs-apologize-for-rocky-launch-state-of-the-game/)
+
+---
+
 ## <a id="supercrit"></a>SuperCrit
 
 - **Category**: ABANDONWARE
@@ -236,9 +267,10 @@ Last Updated: 2026-01-31
 
 - **Category**: ASSET_FLIP
 - **Severity**: CRITICAL
+- **Aliases**: Tero Lunkka, Valkeala Software, ZERO5GAMES
 - **Notes**: Prolific asset flipper (e.g. 'Spartinator', 'Money Heist Thief 2').
 - **Evidence**:
-  - [Primary Source](https://www.youtube.com/watch?v=example)
+  - [Primary Source](https://steamcommunity.com/app/1222340/discussions/0/3114770279398533816/)
 
 ---
 
