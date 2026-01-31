@@ -27,9 +27,18 @@ We maintain a strict **No Proof, No Entry** policy. We do not support witch hunt
 
 1. Fork the repository.
 2. Clone your fork.
-3. Make your changes to the userscript or automation workflows.
-4. Run tests (if applicable).
-5. Open a Pull Request.
+3. checkout the `develop` branch.
+4. Make your changes to the userscript or automation workflows.
+5. Run tests (if applicable).
+6. Open a Pull Request targeting the `develop` branch.
+
+**Note:** The `main` branch is for stable releases only. All development happens on `develop`.
 
 ### Database Validation
 All changes to `database.json` are automatically validated by GitHub Actions. Ensure your JSON is valid and includes all required fields (`proof_url` is critical!).
+
+### Branch Protection
+The `main` branch is protected. This means:
+1.  **No direct pushes**: You cannot push directly to `main`. You must use a Pull Request via `develop`.
+2.  **Status Checks**: All automated tests (JSON validation, etc.) must pass before merging.
+3.  **Code Review**: Pull Requests may require review from a maintainer.

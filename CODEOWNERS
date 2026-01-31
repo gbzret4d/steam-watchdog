@@ -1,0 +1,15 @@
+# This file defines who owns certain parts of the code.
+# These owners will be automatically requested for review when a Pull Request touches these files.
+
+# Global owner
+* @gbzret4d
+
+# Database and Schema
+database.json @gbzret4d
+database.schema.json @gbzret4d
+
+# Userscript
+*.js @gbzret4d
+
+# GitHub Workflows
+.github/ @gbzret4d
