@@ -1,6 +1,6 @@
 {
     "name": "steam-dev-filter",
-    "version": "1.6.2",
+    "version": "1.6.3",
     "description": "Warns about fraudulent Steam developers based on a community database.",
     "scripts": {
         "test": "jest",

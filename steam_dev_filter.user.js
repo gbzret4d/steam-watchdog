@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Steam Dev Filter
 // @namespace    https://github.com/gbzret4d/steam-dev-filter
-// @version      1.6.2
+// @version      1.6.3
 // @description  Warns about fraudulent Steam developers (Rug pulls, Asset Flips, etc.) based on a community database.
 // @author       Steam Dev Filter Community
 // @match        https://store.steampowered.com/*
@@ -29,7 +29,7 @@
 
     // --- Configuration ---
     const DB_URL = 'https://raw.githubusercontent.com/gbzret4d/steam-dev-filter/main/database.json'; // TODO: Replace USERNAME with actual owner
-    const CACHE_KEY = 'steam_dev_filter_db_v4';
+    const CACHE_KEY = 'steam_dev_filter_db_v5';
     const CACHE_TIME = 24 * 60 * 60 * 1000; // 24 hours
     const SETTINGS_KEY = 'steam_dev_filter_settings';
 
@@ -214,14 +214,14 @@
             text-transform: uppercase;
             box-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         }
-        .sw-badge.critical { background-color: #d9534f; border: 1px solid #b52b27; } /* Red */
-        .sw-badge.warning { background-color: #f0ad4e; border: 1px solid #eb9316; } /* Orange */
-        .sw-badge.info { background-color: #5bc0de; border: 1px solid #46b8da; } /* Blue/Netural */
+        .sw-badge.critical { background-color: #a03030; border: 1px solid #c9302c; } /* Darker Red */
+        .sw-badge.warning { background-color: #d39e00; border: 1px solid #c69500; } /* Darker Orange */
+        .sw-badge.info { background-color: #17a2b8; border: 1px solid #138496; } /* Darker Blue */
         
-        .sw-badge:hover { opacity: 0.9; }
+        .sw-badge:hover { opacity: 0.9; box-shadow: 0 0 5px rgba(255,0,0,0.5); }
 
         /* Icon styling */
-        .sw-icon { margin-right: 4px; }
+        .sw-icon { margin-right: 4px; font-size: 1.2em; text-shadow: 0 1px 2px rgba(0,0,0,0.5); }
 
         /* Settings Modal */
         .sw-modal-overlay {

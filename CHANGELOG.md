@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.6.3] - 2026-01-31
+### Changed
+- Refined badge styling: Darker background colors for better contrast, larger icons, and added text shadow for better icon visibility.
+
 ## [1.6.2] - 2026-01-31
 ### Fixed
 - Fixed issue where badges were hidden by Steam's layout truncation (CSS overflow fix).
