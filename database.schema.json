@@ -16,14 +16,34 @@
                     }
                 },
                 "type": {
-                    "type": "string",
-                    "enum": [
-                        "RUG_PULL",
-                        "ASSET_FLIP",
-                        "MALICIOUS",
-                        "ABANDONWARE",
-                        "HOSTILE_DEV",
-                        "BROKEN_PROMISES"
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "enum": [
+                                "RUG_PULL",
+                                "ASSET_FLIP",
+                                "MALICIOUS",
+                                "ABANDONWARE",
+                                "HOSTILE_DEV",
+                                "BROKEN_PROMISES",
+                                "AI_SLOP"
+                            ]
+                        },
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "RUG_PULL",
+                                    "ASSET_FLIP",
+                                    "MALICIOUS",
+                                    "ABANDONWARE",
+                                    "HOSTILE_DEV",
+                                    "BROKEN_PROMISES",
+                                    "AI_SLOP"
+                                ]
+                            }
+                        }
                     ]
                 },
                 "proof_url": {

@@ -71,7 +71,11 @@ Last Updated: 2026-01-31
 
 ## <a id="asylum_entertainment"></a>Asylum Entertainment Inc.
 
+<<<<<<< HEAD
+- **Category**: ABANDONWARE, BROKEN_PROMISES
+=======
 - **Category**: ABANDONWARE,BROKEN_PROMISES
+>>>>>>> 927d84b6b8e796c91d52c3f4547b15ee98cc0485
 - **Severity**: CRITICAL
 - **Notes**: Raised $1.5M+ for 'Identity RPG'. Delivered 10% of game, then abandoned it.
 - **Evidence**:
@@ -117,7 +121,7 @@ Last Updated: 2026-01-31
 - **Aliases**: Birdiev, Bertiev, BCInteractive
 - **Notes**: Notorious asset flipper and critic banner. 'Willingly scams consumers' (SidAlpha).
 - **Evidence**:
-  - [Primary Source](https://www.youtube.com/results?search_query=SidAlpha+Dirty+Devs+I%27m+Looking+for+3024+People)
+  - [Primary Source](https://www.youtube.com/watch?v=y-R2L306uXk)
 
 ---
 
@@ -589,7 +593,7 @@ Last Updated: 2026-01-31
 
 ## <a id="snail_games"></a>Snail Games
 
-- **Category**: ABANDONWARE,BROKEN_PROMISES
+- **Category**: ABANDONWARE, BROKEN_PROMISES
 - **Severity**: WARNING
 - **Aliases**: Snail Games USA
 - **Notes**: Publisher notorious for abandoning games (Atlas, Dark and Light) and aggressive monetization.
@@ -731,4 +735,3 @@ Last Updated: 2026-01-31
   - [Primary Source](https://www.reddit.com/r/Steam/comments/16x9g3s/dreadmyst_developer_xjum_is_a_scammer/)
 
 ---
-

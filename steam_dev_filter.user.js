@@ -258,24 +258,30 @@
 
     // --- Icons & Config ---
     const CATEGORIES = {
-        RUG_PULL: { icon: "💸", severity: "critical", label: "Rug Pull" },
-        ASSET_FLIP: { icon: "🗑️", severity: "critical", label: "Asset Flip" },
-        MALICIOUS: { icon: "☣️", severity: "critical", label: "Malicious" },
-        ABANDONWARE: { icon: "🕸️", severity: "warning", label: "Abandonware" },
-        HOSTILE_DEV: { icon: "🤐", severity: "warning", label: "Hostile Dev" },
-        BROKEN_PROMISES: { icon: "🚧", severity: "warning", label: "Broken Promises" },
-        AI_SLOP: { icon: "🤖", severity: "warning", label: "AI Slop" }
+        RUG_PULL: { icon: "💸", severity: "critical" },
+        ASSET_FLIP: { icon: "🗑️", severity: "critical" },
+        MALICIOUS: { icon: "☣️", severity: "critical" },
+        ABANDONWARE: { icon: "🕸️", severity: "warning" },
+        HOSTILE_DEV: { icon: "🤐", severity: "warning" },
+        BROKEN_PROMISES: { icon: "🚧", severity: "warning" },
+        AI_SLOP: { icon: "🤖", severity: "warning" }
     };
 
     function getWorstCategory(categoryKeys) {
         if (!Array.isArray(categoryKeys)) categoryKeys = [categoryKeys];
 
+        const severityLevels = { critical: 2, warning: 1, info: 0 };
         let worst = null;
+        let maxSeverity = -1;
+
         for (const key of categoryKeys) {
             const cat = CATEGORIES[key];
             if (!cat) continue;
-            if (!worst || (cat.severity === 'critical' && worst.severity !== 'critical')) {
-                worst = { ...cat, key }; // Keep the metadata
+
+            const severityLevel = severityLevels[cat.severity] || 0;
+            if (severityLevel > maxSeverity) {
+                maxSeverity = severityLevel;
+                worst = { ...cat, key };
             }
         }
         return worst;
@@ -347,12 +353,12 @@
         if (currentSettings.disabledCategories.includes(entry.type)) return null;
 
         const typeList = Array.isArray(entry.type) ? entry.type : [entry.type];
-        const primaryCatKey = getWorstCategory(typeList).key || typeList[0];
+        const primaryCatKey = getWorstCategory(typeList)?.key || typeList[0];
         const catConfig = CATEGORIES[primaryCatKey] || { icon: "⚠️", severity: "info" };
         const labelText = I18N[LANG][primaryCatKey] || primaryCatKey;
 
         const badge = document.createElement("span");
-        badge.className = `sw-badge ${catConfig.severity}`;
+        badge.className = `sw-badge ${entry.severity || catConfig.severity}`;
         badge.innerHTML = `<span class="sw-icon">${catConfig.icon}</span> ${labelText}`;
 
         // Tooltip logic
