@@ -595,7 +595,7 @@ Last Updated: 2026-01-31
 
 - **Category**: ABANDONWARE, BROKEN_PROMISES
 - **Severity**: WARNING
-- **Aliases**: Snail Games USA
+- **Aliases**: Snail Games USA, Grapeshot Games, Instinct Games
 - **Notes**: Publisher notorious for abandoning games (Atlas, Dark and Light) and aggressive monetization.
 - **Evidence**:
   - [Primary Source](https://www.pcgamer.com/atlas-devs-apologize-for-rocky-launch-state-of-the-game/)

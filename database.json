@@ -265,7 +265,9 @@
     "snail_games": {
         "name": "Snail Games",
         "aliases": [
-            "Snail Games USA"
+            "Snail Games USA",
+            "Grapeshot Games",
+            "Instinct Games"
         ],
         "type": [
             "ABANDONWARE",
