@@ -273,91 +273,92 @@
         ],
         "proof_url": "https://www.pcgamer.com/atlas-devs-apologize-for-rocky-launch-state-of-the-game/",
         "severity": "warning",
-        "asylum_entertainment": {
-            "name": "Asylum Entertainment Inc.",
-            "aliases": [],
-            "type": [
-                "ABANDONWARE",
-                "BROKEN_PROMISES"
-            ],
-            "proof_url": "https://mmofallout.com/identity-rpg-developers-claim-to-be-working-on-it/",
-            "severity": "critical",
-            "notes": "Raised $1.5M+ for 'Identity RPG'. Delivered 10% of game, then abandoned it."
-        },
-        "nvizzio_creations": {
-            "name": "Nvizzio Creations",
-            "aliases": [
-                "Darewise Entertainment"
-            ],
-            "type": "ABANDONWARE",
-            "proof_url": "https://en.wikipedia.org/wiki/Rokh_(video_game)",
-            "severity": "warning",
-            "notes": "Abandoned 'ROKH' due to lack of funding. Game removed from Steam."
-        },
-        "bitmonster": {
-            "name": "BitMonster",
-            "aliases": [],
-            "type": "ABANDONWARE",
-            "proof_url": "https://steamcommunity.com/app/332500/discussions/0/135509823662557688/",
-            "severity": "warning",
-            "notes": "Abandoned 'GRAV' in Early Access to work on other projects."
-        },
-        "stained_glass_llama": {
-            "name": "Stained Glass Llama",
-            "aliases": [],
-            "type": "ABANDONWARE",
-            "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
-            "severity": "warning",
-            "notes": "Abandoned 'Divergence: Online' and 'Divergence: Year Zero'."
-        },
-        "digital_dawn_studios": {
-            "name": "Digital Dawn Studios",
-            "aliases": [],
-            "type": "ABANDONWARE",
-            "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
-            "severity": "warning",
-            "notes": "Abandoned 'Sirius Online'."
-        },
-        "hyper_hippo_games": {
-            "name": "Hyper Hippo Games",
-            "aliases": [],
-            "type": "ABANDONWARE",
-            "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
-            "severity": "warning",
-            "notes": "Abandoned 'Wild Warfare' in Early Access."
-        },
-        "bytebin": {
-            "name": "Bytebin",
-            "aliases": [],
-            "type": "ABANDONWARE",
-            "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
-            "severity": "warning",
-            "notes": "Abandoned 'Deepworld'."
-        },
-        "fairytale_distillery": {
-            "name": "Fairytale Distillery",
-            "aliases": [],
-            "type": "ABANDONWARE",
-            "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
-            "severity": "warning",
-            "notes": "Abandoned 'The Exiled'."
-        },
-        "little_big_mmo": {
-            "name": "Little Big MMO",
-            "aliases": [],
-            "type": "ABANDONWARE",
-            "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
-            "severity": "warning",
-            "notes": "Abandoned 'Gangs of Space'."
-        },
-        "star_vault_ab": {
-            "name": "Star Vault AB",
-            "aliases": [],
-            "type": "ABANDONWARE",
-            "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
-            "severity": "warning",
-            "notes": "Abandoned 'Mortal Royale'."
-        }
+        "notes": "Publisher notorious for abandoning games (Atlas, Dark and Light) and aggressive monetization."
+    },
+    "asylum_entertainment": {
+        "name": "Asylum Entertainment Inc.",
+        "aliases": [],
+        "type": [
+            "ABANDONWARE",
+            "BROKEN_PROMISES"
+        ],
+        "proof_url": "https://mmofallout.com/identity-rpg-developers-claim-to-be-working-on-it/",
+        "severity": "critical",
+        "notes": "Raised $1.5M+ for 'Identity RPG'. Delivered 10% of game, then abandoned it."
+    },
+    "nvizzio_creations": {
+        "name": "Nvizzio Creations",
+        "aliases": [
+            "Darewise Entertainment"
+        ],
+        "type": "ABANDONWARE",
+        "proof_url": "https://en.wikipedia.org/wiki/Rokh_(video_game)",
+        "severity": "warning",
+        "notes": "Abandoned 'ROKH' due to lack of funding. Game removed from Steam."
+    },
+    "bitmonster": {
+        "name": "BitMonster",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://steamcommunity.com/app/332500/discussions/0/135509823662557688/",
+        "severity": "warning",
+        "notes": "Abandoned 'GRAV' in Early Access to work on other projects."
+    },
+    "stained_glass_llama": {
+        "name": "Stained Glass Llama",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Divergence: Online' and 'Divergence: Year Zero'."
+    },
+    "digital_dawn_studios": {
+        "name": "Digital Dawn Studios",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Sirius Online'."
+    },
+    "hyper_hippo_games": {
+        "name": "Hyper Hippo Games",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Wild Warfare' in Early Access."
+    },
+    "bytebin": {
+        "name": "Bytebin",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Deepworld'."
+    },
+    "fairytale_distillery": {
+        "name": "Fairytale Distillery",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'The Exiled'."
+    },
+    "little_big_mmo": {
+        "name": "Little Big MMO",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Gangs of Space'."
+    },
+    "star_vault_ab": {
+        "name": "Star Vault AB",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Mortal Royale'."
     },
     "black_riddles_studio": {
         "name": "Black Riddles Studio Ltd",
@@ -374,5 +375,272 @@
         "proof_url": "https://steamcommunity.com/app/283100/discussions/0/613958868352112282/",
         "severity": "warning",
         "notes": "Abandoned 'Colonies Online' shortly after Early Access release."
+    },
+    "valga_games_studio": {
+        "name": "Valga Games Studio",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Ancient Siberia'."
+    },
+    "wild_wolf_std": {
+        "name": "Wild Wolf Std",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Badland Bandits'."
+    },
+    "ao_games_studios": {
+        "name": "AO Games Studios",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Build It'."
+    },
+    "echoboom_sl": {
+        "name": "Echoboom S.L.",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Dogfight Elite'."
+    },
+    "self_destruction_games": {
+        "name": "Self Destruction Games",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Exchange'."
+    },
+    "aleksei_milchakov": {
+        "name": "Aleksei Milchakov",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Exile to Death'."
+    },
+    "faith_kaya": {
+        "name": "Faith KAYA",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Fantasy ERA'."
+    },
+    "cold_tea_studio": {
+        "name": "Cold Tea Studio",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Fantasy Tales Online'."
+    },
+    "aidangig": {
+        "name": "Aidangig",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Flash Point'."
+    },
+    "red_abyss_software": {
+        "name": "Red Abyss Software",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Hide & Hold Out – H2O'."
+    },
+    "cruderocks": {
+        "name": "Cruderocks",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'High Octane Drift'."
+    },
+    "because_i_can": {
+        "name": "Because I Can",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Hurricane'."
+    },
+    "dmitry_medvedev": {
+        "name": "Dmitry Medvedev",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Impulse of War'."
+    },
+    "eforb": {
+        "name": "Eforb",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Intershelter'."
+    },
+    "fever_game_studios": {
+        "name": "Fever Game Studios",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'The Last Front'."
+    },
+    "4netgames": {
+        "name": "4NetGames",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Lonath Online'."
+    },
+    "gdt_limited": {
+        "name": "GDT Limited",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Metal War Online: Retribution'."
+    },
+    "bread_vision_studios_llc": {
+        "name": "Bread Vision Studios LLC",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Mystica: The Ninth Society'."
+    },
+    "move_games_co_ltd": {
+        "name": "Move Games Co. Ltd.",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Redemption'."
+    },
+    "black_snake_games": {
+        "name": "Black Snake Games",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'The Region'."
+    },
+    "unexevo": {
+        "name": "UnexEvo",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Riding Out'."
+    },
+    "teletower_studios": {
+        "name": "Teletower Studios",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Road Dogs'."
+    },
+    "owl_tribe_entertainment": {
+        "name": "Owl Tribe Entertainment",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Slay Together'."
+    },
+    "sneirox": {
+        "name": "Sneirox",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Sneiroball'."
+    },
+    "universe": {
+        "name": "Universe",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Space Universe'."
+    },
+    "slav_pankratov": {
+        "name": "Slav Pankratov",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Voice of Pripyat'."
+    },
+    "ba_d": {
+        "name": "BA.D.",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Warma Online'."
+    },
+    "insane_unity": {
+        "name": "Insane Unity",
+        "aliases": [
+            "Bidaj"
+        ],
+        "type": "ABANDONWARE",
+        "proof_url": "https://mmofallout.com/list-of-abandoned-steam-early-access-games/",
+        "severity": "warning",
+        "notes": "Abandoned 'Win That War!'."
+    },
+    "fadygames": {
+        "name": "FadyGames",
+        "aliases": [
+            "Galescorp",
+            "ImperiumGame",
+            "Reforged Group"
+        ],
+        "type": "ASSET_FLIP",
+        "proof_url": "https://steamcommunity.com/discussions/forum/0/4206994023681438994/",
+        "severity": "critical",
+        "notes": "Known for fake crypto and asset flip scams."
+    },
+    "dexion_games": {
+        "name": "Dexion Games",
+        "aliases": [],
+        "type": "ASSET_FLIP",
+        "proof_url": "https://www.youtube.com/watch?v=1x9_oHw1jT0",
+        "severity": "critical",
+        "notes": "Corrupt asset flipper renaming kits as full games."
+    },
+    "arcaneraise": {
+        "name": "ArcaneRaise",
+        "aliases": [
+            "RetriButioN",
+            "R3TR1X"
+        ],
+        "type": "ASSET_FLIP",
+        "proof_url": "https://www.reddit.com/r/Steam/comments/7c504u/arcaneraise_developer_is_using_multiple_alts_to/",
+        "severity": "critical",
+        "notes": "Spamming low quality asset flips and scam DLCs."
+    },
+    "rosa_special_studio": {
+        "name": "Rosa Special Studio",
+        "aliases": [
+            "玫瑰工作室"
+        ],
+        "type": "ASSET_FLIP",
+        "proof_url": "https://steamcommunity.com/groups/Sentinels_of_the_Store/discussions/0/3283695240294726590/",
+        "severity": "critical",
+        "notes": "Asset flip publisher."
     }
 }
