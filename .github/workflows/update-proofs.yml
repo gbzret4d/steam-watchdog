@@ -29,7 +29,7 @@ jobs:
               run: node scripts/generate_proofs.js
 
             - name: Commit changes
-              uses: stefanzweifel/git-auto-commit-action@v5
+              uses: stefanzweifel/git-auto-commit-action@v7
               with:
                   commit_message: "docs: update PROOFS.md [skip ci]"
                   file_pattern: "PROOFS.md"
