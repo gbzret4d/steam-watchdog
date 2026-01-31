@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.6.1] - 2026-01-31
+### Fixed
+- Added "Midnight Games" alias to `database.json` to fix matching on certain store pages.
+- Bumped `CACHE_KEY` to `v3` to force database refresh for all users.
+- Removed obsolete `RENAME_ON_GITHUB.md`.
+
 ## [1.6.0] - 2026-01-31
 ### Added
 - Userscript Settings Menu (Language override, Category toggles).

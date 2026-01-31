@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Steam Dev Filter
 // @namespace    https://github.com/gbzret4d/steam-dev-filter
-// @version      1.6
+// @version      1.6.1
 // @description  Warns about fraudulent Steam developers (Rug pulls, Asset Flips, etc.) based on a community database.
 // @author       Steam Dev Filter Community
 // @match        https://store.steampowered.com/*
@@ -29,7 +29,7 @@
 
     // --- Configuration ---
     const DB_URL = 'https://raw.githubusercontent.com/gbzret4d/steam-dev-filter/main/database.json'; // TODO: Replace USERNAME with actual owner
-    const CACHE_KEY = 'steam_dev_filter_db_v2';
+    const CACHE_KEY = 'steam_dev_filter_db_v3';
     const CACHE_TIME = 24 * 60 * 60 * 1000; // 24 hours
     const SETTINGS_KEY = 'steam_dev_filter_settings';
 
