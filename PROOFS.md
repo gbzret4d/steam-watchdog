@@ -3,7 +3,7 @@
 This document contains the proofs and details for developers listed in the Steam Dev Filter database.
 *Auto-generated. Do not edit manually.*
 
-Last Updated: 2026-01-30
+Last Updated: 2026-01-31
 
 ---
 
@@ -117,7 +117,7 @@ Last Updated: 2026-01-30
 
 - **Category**: ASSET_FLIP
 - **Severity**: CRITICAL
-- **Aliases**: Midnight.Games, Midnight Works S.R.L.
+- **Aliases**: Midnight.Games, Midnight Games, Midnight Works S.R.L.
 - **Notes**: Known for stealing games, mass asset flipping, and operating under multiple aliases.
 - **Evidence**:
   - [Primary Source](https://www.reddit.com/r/gamedev/comments/1ix993g/a_big_scam_company_just_stole_my_whole_game_from/)
