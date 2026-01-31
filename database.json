@@ -236,7 +236,7 @@
             "BCInteractive"
         ],
         "type": "ASSET_FLIP",
-        "proof_url": "https://www.youtube.com/watch?v=1X1X1X1X1X1",
+        "proof_url": "https://www.youtube.com/results?search_query=SidAlpha+Dirty+Devs+I%27m+Looking+for+3024+People",
         "severity": "critical",
         "notes": "Notorious asset flipper and critic banner. 'Willingly scams consumers' (SidAlpha)."
     },
@@ -252,10 +252,46 @@
     },
     "tero": {
         "name": "Tero",
-        "aliases": [],
+        "aliases": [
+            "Tero Lunkka",
+            "Valkeala Software",
+            "ZERO5GAMES"
+        ],
         "type": "ASSET_FLIP",
-        "proof_url": "https://www.youtube.com/watch?v=example",
+        "proof_url": "https://steamcommunity.com/app/1222340/discussions/0/3114770279398533816/",
         "severity": "critical",
         "notes": "Prolific asset flipper (e.g. 'Spartinator', 'Money Heist Thief 2')."
-    }
+    },
+    "snail_games": {
+        "name": "Snail Games",
+        "aliases": [
+            "Snail Games USA"
+        ],
+        "type": [
+            "ABANDONWARE",
+            "BROKEN_PROMISES"
+        ],
+        "proof_url": "https://www.pcgamer.com/atlas-devs-apologize-for-rocky-launch-state-of-the-game/",
+        "severity": "warning",
+        "notes": "History of abandoning games (Atlas) and poor optimization. Ark controversies."
+    },
+    "black_riddles_studio": {
+        "name": "Black Riddles Studio Ltd",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://www.eurogamer.net/crazy-justice-dev-goes-silent-as-backers-fear-for-switch-battle-royale",
+        "severity": "warning",
+        "notes": "Crowdfunded 'Crazy Justice' and went silent for years."
+    },
+    "iron_bit": {
+        "name": "Iron Bit",
+        "aliases": [],
+        "type": "ABANDONWARE",
+        "proof_url": "https://steamcommunity.com/app/283100/discussions/0/613958868352112282/",
+        "severity": "warning",
+        "notes": "Abandoned 'Colonies Online' shortly after Early Access release."
+    }        "proof_url": "https://www.youtube.com/watch?v=example",
+    "severity": "critical",
+    "notes": "Prolific asset flipper (e.g. 'Spartinator', 'Money Heist Thief 2')."
+}
 }

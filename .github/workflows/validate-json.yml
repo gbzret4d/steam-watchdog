@@ -53,9 +53,19 @@ jobs:
                       failed = True
               
               # Check ENUMs
-              if 'type' in entry and entry['type'] not in VALID_TYPES:
-                  print(f'::error file=database.json::ID {steam_id}: Invalid type \'{entry['type']}\'. Allowed: {VALID_TYPES}')
-                  failed = True
+              if 'type' in entry:
+                  t_val = entry['type']
+                  if isinstance(t_val, str):
+                      t_val = [t_val]
+                  
+                  if not isinstance(t_val, list):
+                      print(f'::error file=database.json::ID {steam_id}: Type must be string or list')
+                      failed = True
+                  else:
+                      for t in t_val:
+                          if t not in VALID_TYPES:
+                              print(f'::error file=database.json::ID {steam_id}: Invalid type \'{t}\'. Allowed: {VALID_TYPES}')
+                              failed = True
               
               if 'severity' in entry and entry['severity'] not in VALID_SEVERITIES:
                   print(f'::error file=database.json::ID {steam_id}: Invalid severity \'{entry['severity']}\'. Allowed: {VALID_SEVERITIES}')
